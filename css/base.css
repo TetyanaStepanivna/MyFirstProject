@@ -1,0 +1,13 @@
+.container {
+    max-width: 1240px;
+    margin: 0 auto; 
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
