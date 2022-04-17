@@ -1,0 +1,15 @@
+%background-image {
+    background-size: cover;
+    padding-top: 86px;
+    background-repeat: no-repeat;
+}
+
+.photo__python {
+    background-image: url(../images/python/python1.png);
+    height: 683px;
+    max-width: 1500px;
+    padding: 120px 0 30px;
+    background-position: 0 66px;
+    border-radius: 0px;
+    @extend %background-image;
+}

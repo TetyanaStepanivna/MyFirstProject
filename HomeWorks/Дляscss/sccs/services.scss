@@ -1,0 +1,115 @@
+//Colors
+$yellow:#FFAE2B; 
+$cream-color: #ACA592;
+$black: #181511;
+$brown: #4B4136;
+$white: #FFFFFF;
+
+%background-image {
+    background-size: cover;
+    padding-top: 86px;
+    background-repeat: no-repeat;
+}
+
+%icon {
+    height: 23px;
+    width: 23px;
+    margin-top: 10px;
+}
+
+%flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin fonts ($family, $style, $weight, $size) {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+body {
+    font-family: 'Old Standard TT', serif;
+    background-color: $black;
+ }
+ 
+
+
+ .services__information__holder {
+    @extend %flex;
+    border-radius: 5px;
+    justify-content: center;
+ }
+ 
+ 
+ .services__headlines {
+    @extend %flex;
+    flex-direction: column;
+    padding: 120px 0 30px;
+ }
+
+
+
+ .services__subtitle {
+    font: {
+        family: 'Old Standard TT';
+        style: normal;
+        size: 12px;
+    }
+
+    color: $cream-color;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+.services__information {
+    border: 1px solid $brown;
+    width: 400px;
+    height: 350px;
+}
+
+.services__profession {
+    @include fonts ('Old Standard TT', normal, 400, 29px);
+    display: block;
+    color: $yellow;
+    line-height: 40px;
+    margin-bottom: 18px;
+    margin-top: 10px;
+}
+
+
+.services__text {
+    color: $cream-color;
+    @include fonts ('Old Standard TT', normal, 400, 18px);
+    line-height: 26px;
+    margin-bottom: 18px;
+}
+
+.services__description {
+    color: $cream-color;
+    @include fonts ('Old Standard TT', normal, 400, 14px);
+    line-height: 26px;
+}
+
+
+.information__element-1 {
+margin-bottom: 10px;
+}
+
+.information__element-3 {
+    margin-top: 25px;
+    }
+
+.services__information__inner {
+    height: 278px;
+    width: 330px;
+    padding: 50px 50px 50px;
+}
+
+
+ 

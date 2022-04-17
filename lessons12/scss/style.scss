@@ -1,0 +1,893 @@
+//Fonts 
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&family=Roboto:ital@1&display=swap');
+
+
+//Colors
+$white: #ffffff;
+$black: #000000; 
+$blue: #4543E8;
+$violet: #010032;
+$lilac: #D8D8EB;
+
+
+$containerMaxWidth: 1280px;
+
+
+body {
+    color: $black;
+    height: 4000px
+
+} 
+
+.container {
+    max-width: $containerMaxWidth + 40;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $violet;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+    padding: 14px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.header__burger {
+    position: relative;
+    text-align: center;
+    color: $white;
+    width: 320px;
+    height: 40px;
+    background-color: $violet;
+}
+
+.header__nav {
+    margin-left: 15px;
+}
+
+.nav__items {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    margin-left: 30px;
+}
+
+
+.nav__item:hover {
+    font-weight: 700;
+}
+
+#check-menu {
+    display: none;
+
+}
+
+label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 40px;
+}
+
+.burger__line {
+    position: absolute;
+    top: 16px;
+    right: 92px;
+    width: 23px;
+    height: 1px;
+    background-color: $white;
+}
+
+
+.second {
+top: 25px;
+}
+
+.burger__menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    font-size: 0;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+.burger__link {
+    display: block;
+    width: 100%;
+    color: $white;
+    text-decoration: none;
+    border-top: 2px solid $violet;
+    background-color: $violet;
+}
+
+#check-menu:checked ~ .burger__menu {
+  max-height: 900px;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+
+.offer {
+  background-color: $violet;
+}
+
+
+.offer__header {
+  width: 604px;
+  height: 227px;
+  color: $white;
+  font-size: 72px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 76px;
+  font-family: 'Epilogue', sans-serif;
+  padding-top: 30px;
+  margin-left: 80px;
+}
+
+.offer__about {
+   width: 543px;
+   height: 103px;
+   font-size: 20px;
+   color: $white;
+   font-weight: 400;
+   line-height: 34px;
+   font-style: normal;
+   position: absolute;
+   top: 261px;
+   padding-left: 80px;
+   padding-top: 90px;
+   font-family: 'Epilogue', sans-serif;
+}
+
+
+.button a {
+    padding: 14px 24px;
+    background-color: $white;
+    color: $black;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    font-family: 'Epilogue', sans-serif;
+    border-radius: 32px;
+    margin-top: 200px;
+    margin-left: 80px;
+    width: 180px;
+    height: 55px;
+}
+
+.offer {
+    display: flex;
+    position: relative;
+    padding: 50px 50px 50px;
+}
+
+.offer__element-2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-top: -50px;
+}
+
+.reward__img {
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.reward__item {
+    color: $white;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-left: 150px;
+    margin-top: -55px;
+}
+
+.reward__site {
+    margin-left: 150px;
+    margin-top: 8px;
+    color: $white;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    width: 275px;
+    height: 23px;
+}
+
+.review {
+    padding: 100px 100px 100px;
+}
+
+
+.text__about {
+    font-family: 'Epilogue', sans-serif;
+    color: $blue;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about {
+    display: flex;
+}
+
+.about__img {
+    width: 60px;
+    height: 8px;
+    margin-top: 5px;
+}
+
+.reviews {
+    margin-top: 70px;
+}
+
+.reviews__text {
+    font-family: 'Epilogue', sans-serif;
+    color: $black;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    width: 391px;
+    height: 112px;
+}
+
+.avatar {
+    margin-top: 30px;
+}
+
+.name {
+    color: $black;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 70px;
+    margin-top: -55px;
+}
+
+.profession {
+    color: $black;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    margin-left: 70px;
+    margin-top: 8px;
+}
+
+.image__container {
+    padding: 100px 100px 100px;
+}
+
+.row1 {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+
+.header__image__container {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 66px;
+    color: $black;
+    width: 698px;
+    height: 132px;
+    margin-top: 30px;
+}
+
+.images__header {
+    font-family: 'Epilogue', sans-serif;
+    color: $black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+
+.images__text {
+    font-family: 'Epilogue', sans-serif;
+    color: $black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    width: 500px;
+    height: 56px;
+    margin-top: 20px;
+}
+
+
+.images__text__row2 {
+    font-family: 'Epilogue', sans-serif;
+    color: $black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+.image__container__button {
+   font-family: 'Epilogue', sans-serif;
+   width: 160px;
+   height: 160px;
+   background-color: $blue;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   text-transform: uppercase;
+   color: $white;
+   text-align: center;
+   margin-top: 50px;
+}
+
+.image__button {
+    margin-top: 60px;
+    width: 146px;
+    height: 24px;
+}
+
+.row2 {
+    text-align: center;
+    padding-top: 60px; ;
+}
+
+.left__image {
+width: 510px;
+height: 500px;
+}
+
+.right__image {
+    padding-left: 140px;
+}
+
+.row3 {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.right__image__row3 {
+    padding-left:  240px;
+}
+
+.img4 {
+width: 620px;
+height: 660px;
+}
+
+
+.subtitle__item {
+    font-family: 'Epilogue', sans-serif;
+    color: $black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.items {
+    padding: 100px 100px 100px;
+}
+
+.header__item__first {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    color: $black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header__item__two {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    color: $black;
+    text-align: center;
+}
+
+.word {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $blue;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.text__item {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;    
+    line-height: 28px;
+    color: $black;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.arrow {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 90px;
+}
+
+.button__item {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: $blue;
+    text-align: center;
+    width: 188px;
+    margin: 0 auto;
+}
+
+.сontainer__items {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.element-2 {
+    padding-left: 30px;
+}
+
+.element-3 {
+    padding-left: 30px;
+}
+
+.testimonials {
+    background-color: $lilac;
+    padding: 100px 100px 100px;
+    padding-left: 60px;
+    margin-top: 100px;
+}
+
+.testimonials__element {
+    background-color: $white;
+    border-radius: 20px 20px 0px 20px;
+    width: 576px;
+    height: 360px;
+    margin-left: 90px;
+    padding: 40px 40px 40px;
+}
+
+.testimonials__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.testimonials__header {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;    
+    line-height: 66px;
+    color: $black;
+    width: 623px;
+    height: 132px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.testimonials__subtitle {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;    
+    line-height: 30px;
+    color: $black;
+    margin-top: 20px;
+}
+
+.testimonials__text {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;    
+    line-height: 28px;
+    color: $black;
+    margin-top: 20px;
+}
+
+
+.testimonials__img {
+    margin-top: 20px;
+}
+
+.information__holder {
+    display: flex;
+    justify-content: center;
+}
+
+.information__element-1 {
+    background-image: url(../images/reviews/cover.png);
+    height: 400px;
+    width: 100%;
+
+}
+
+.information__element-2 {
+    background-color: $blue;
+    height: 400px;
+    width: 100%;
+
+}
+
+.header__information {
+    font-family: 'Epilogue', sans-serif;
+    color: $white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.information__text {
+    font-family: 'Epilogue', sans-serif;
+    color: $white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    width: 393px;
+    height: 56px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.information__button {
+    font-family: 'Epilogue', sans-serif;
+    color: $white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer {
+    background-color: $violet;
+    width: 1520px;
+}
+
+
+.footer__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__header__element {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 66px;
+    color: $white;
+    width: 6185px;
+    height: 96px;
+    margin-top: 50px;
+}
+
+.footer__header__element-2 {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 66px;
+    color: $white;
+    width: 775px;
+    height: 66px;
+    margin-top: 50px;
+}
+
+.footer__header__element-3 {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 66px;
+    color: $white;
+    width: 775px;
+    height: 66px;
+}
+
+.footer__inner {
+    display: flex;
+    padding: 100px 100px 100px;
+    width: 1280px;
+    height: 275px;
+
+}
+
+.mail {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: $white;
+    width: 220px;
+    height: 28px;
+    margin-right: 150px;
+}
+
+.footer__links {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: $white;
+    margin-right: 150px;
+}
+
+.footer__social {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: $white;
+    margin-right: 150px;
+}
+
+.footer__item {
+    width: 43px;
+    height: 28px;
+}
+
+.footer__bottom {
+    border-top: 1px solid $white;
+    width: 1280px;
+    margin-left: 80px;
+    opacity: 0.9;
+}
+
+
+.footer__nav {
+    flex: 1 0 auto;
+    margin-left: 28px;
+    margin-top: -28px;
+}
+
+.footer__list {
+    display: flex;
+    margin-top: 4px;
+    float: right;
+}
+
+.footer__bottom__item {
+    margin-right: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+}
+
+
+.footer__item :last-child {
+    border-right: none;
+}
+
+.footer__item:first-child {
+    margin-left: 0px;
+}
+
+.footer__list {
+    color: $white;
+}
+
+
+input {
+   border: 1px solid rgba(255, 255, 255, 0.16);
+   border-radius: 240px;
+   background-color: $violet;
+   width: 290px;
+   height: 48px;
+   color: $white;
+}
+
+.footer__logo__word {
+   font-family: 'Epilogue', sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 24px;
+   color: $white;
+   width: 78px;
+   height: 24px;
+}
+
+.subscription__button {
+    background-color: $blue;
+    border-radius: 24px;
+    width: 140px;
+    height: 48px;
+    margin-left: 20px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $white;
+}
+
+.subscription__block {
+    display: flex;
+}
+
+
+.footer__heading__list {
+    display: flex;
+    margin-top: 4px;
+}
+
+.footer__heading__item {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.footer__bottom__link {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+}
+
+.arrow__violet {
+    margin-top: -3px;
+}
+
+.input__email {
+    display: flex;
+}
+
+
+.logo__word {
+    padding-top: 80px;
+    padding-left: 100px;
+    display: flex;
+}
+
+
+.reviews__block {
+    display: flex;
+}
+
+.reviews__block__right {
+    padding-left: 120px;
+}
+
+
+.header__reviews {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+    color: $black;
+    width: 767px;
+    height: 108px;
+}
+
+.achievement___holder {
+    display: flex;
+    margin-top: 50px;
+}
+
+.reviews__block__left {
+    margin-top: 80px;
+}
+
+.achievement__numbers {
+   font-family: 'Epilogue', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 60px;
+   line-height: 66px;
+   color: $blue;
+}
+
+.achievement_text {
+   font-family: 'Epilogue', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 21px;
+   line-height: 31px;
+   color: $black;
+}
+
+.flex-element-2 {
+    margin-left: 50px;
+}
+
+.flex-element-3 {
+    margin-left: 50px;
+}
+
+.logo__container {
+    margin-top: 50px;
+    display: flex;
+}
+
+.logo__1  {
+    margin-right: 30px;
+}
+
+.logo__2  {
+    margin-right: 30px;
+}
+
+.logo__3  {
+    margin-right: 30px;
+}
+
+.logo__4 {
+    margin-right: 30px;
+}
+
+.logo__testimonials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.testimonials__line {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
